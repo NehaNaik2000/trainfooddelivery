@@ -1,0 +1,25 @@
+buildscript {
+    dependencies {
+        classpath 'com.google.gms:google-services:4.3.14'
+        classpath 'com.android.support.constraint:constraint-layout:2.0.4'
+
+    }
+
+    repositories {
+        // Make sure that you have the following two repositories
+        google()  // Google's Maven repository
+        maven { url 'https://jitpack.io' }
+        jcenter() {
+            content {
+                includeModule("com.theartofdev.edmodo", "android-image-cropper")
+            }
+        }
+        mavenCentral()  // Maven Central repository
+
+    }
+}// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.application' version '7.3.0' apply false
+    id 'com.android.library' version '7.3.0' apply false
+
+}

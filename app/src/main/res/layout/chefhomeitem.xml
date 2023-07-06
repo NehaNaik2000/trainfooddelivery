@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+    <androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/OffWhite"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="4dp">
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/text_container" android:id="@+id/fragment_container"/>
+
+
+    <LinearLayout android:layout_width="368dp" android:layout_height="wrap_content" android:orientation="vertical">
+
+    <ImageView android:layout_width="match_parent" android:layout_height="87dp" android:id="@+id/menu_image" android:src="@drawable/paneer_butter_masala" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+
+    <TextView android:layout_width="101dp" android:layout_height="40dp" android:id="@+id/dishname" android:textSize="18sp" android:textColor="@color/Black" android:text="Dish" android:maxWidth="200dp" android:layout_weight="1" android:layout_marginBottom="8dp" android:layout_marginTop="8dp" android:layout_marginLeft="8dp"/>
+
+    <TextView android:layout_width="42dp" android:layout_height="42dp" android:id="@+id/fixedquantity" android:textSize="16sp" android:textColor="@color/Black" android:text="Quantity" android:layout_marginBottom="8dp" android:layout_marginTop="8dp" android:layout_marginLeft="8dp"/>
+
+    <TextView android:layout_width="51dp" android:layout_height="wrap_content" android:id="@+id/price" android:textSize="16sp" android:textColor="@color/Black" android:text="Price: 120Rs" android:layout_marginBottom="8dp" android:layout_marginTop="8dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp"/>
+
+    <Button android:layout_width="166dp" android:layout_height="wrap_content" android:id="@+id/deleteButton" android:textSize="16sp" android:text="Remove"/>
+
+</LinearLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

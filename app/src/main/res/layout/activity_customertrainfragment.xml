@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context=".customerFoodPanel.customertrainfragment">
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+
+        android:gravity="center|center_horizontal"
+        android:includeFontPadding="false"
+        android:padding="12dp"
+        android:paddingLeft="11dp"
+        android:paddingBottom="10dp"
+        android:text="TRAIN DETAILS"
+
+        android:textAlignment="gravity"
+        android:textColor="@color/DarkBlue"
+        android:textDirection="locale"
+        android:textSize="34sp"
+        android:fontFamily="@font/caudex"
+        app:layout_constraintBottom_toTopOf="@id/linearlayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.627" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="277dp"
+        android:layout_height="428dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginBottom="210dp"
+        android:background="@drawable/background_shape"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.503">
+
+
+        <EditText
+            android:id="@+id/Trainno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/caudex"
+            android:hint="Enter Train no"
+            android:paddingBottom="10dp" />
+
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/lightblue"
+            android:text="search"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="26dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/caudex"
+            android:paddingTop="40dp"
+            android:text="UPCOMING STATIONS"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/result_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="10dp" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/result"-->
+        <!--            android:layout_width="280dp"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_marginStart="16dp"-->
+        <!--            android:clickable="true">-->
+
+        <!--        </TextView>-->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueish"
+    tools:context=".Loginphone">
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:fontFamily="@font/caudex"
+        android:gravity="center|center_horizontal"
+        android:includeFontPadding="false"
+        android:padding="12dp"
+        android:paddingLeft="11dp"
+        android:paddingBottom="10dp"
+        android:text="Customer Phone Login"
+        android:textAlignment="gravity"
+        android:textColor="@color/lightblue"
+        android:textDirection="locale"
+        android:textSize="34sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@id/linearlayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="400dp"
+        android:id="@+id/linearlayout"
+        android:background="@drawable/background_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/caudex"
+            android:text="Verify Phone Number"
+            android:textColor="#090909"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <com.hbb20.CountryCodePicker
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:id="@+id/CountryCode"/>
+            <EditText
+                android:layout_width="132dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/Number"
+                android:layout_marginLeft="8dp"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Otp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_shape"
+            android:fontFamily="@font/caudex"
+            android:text="Send OTP"
+            android:textColor="@color/Black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/accsignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Don't Have An Account? SignUp"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:id="@+id/hr"
+                android:layout_width="107dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/Black"/>
+
+            <TextView
+                android:id="@+id/OR"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:text="OR"
+                android:textAlignment="center"
+                android:textColor="@color/Black"
+                android:textSize="14sp" />
+
+            <TableRow
+                android:id="@+id/dr"
+                android:layout_width="107dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/Black"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/signinphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/caudex"
+            android:text="SignIn With"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/buttonEmail"
+            android:layout_width="105dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btnblueish"
+            android:drawableLeft="@drawable/grey_email"
+            android:fontFamily="@font/caudex"
+            android:padding="10dp"
+            android:text="Email"
+            android:textColor="@color/Black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

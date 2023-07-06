@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Pending Orders"
+        android:icon="@drawable/ic_baseline_add_shopping_cart_24"
+        android:id="@+id/pendingorders"/>
+
+    <item android:title="Ship Orders"
+        android:icon="@drawable/ic_baseline_local_shipping_24"
+        android:id="@+id/shiporders"/>
+
+</menu>

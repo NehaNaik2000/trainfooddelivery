@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Seat Number:"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        />
+
+    <EditText
+        android:id="@+id/edit_seat_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter seat number"
+        android:inputType="text"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Coach Details:"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_coach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter coach details"
+        android:inputType="text"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+        />
+
+</LinearLayout>

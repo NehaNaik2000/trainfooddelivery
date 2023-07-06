@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home" android:icon="@drawable/ic_baseline_home_24" android:id="@+id/chefHome"/>
+
+    <item android:title="Pending Orders" android:icon="@drawable/ic_pending_orders_24" android:id="@+id/PendingOrders"/>
+
+    <item android:title="Orders" android:icon="@drawable/ic_baseline_restaurant_menu_24" android:id="@+id/Orders"/>
+
+    <item android:title="Post" android:icon="@drawable/ic_baseline_assignment_24" android:id="@+id/chefPost"/>
+    <item android:title="Profile" android:icon="@drawable/ic_baseline_person_24" android:id="@+id/chefProfile"/>
+</menu>

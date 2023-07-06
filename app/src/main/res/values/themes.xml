@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Trainfooddelivery" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blueish</item>
+        <item name="colorPrimaryDark">@color/blueish</item>
+        <item name="colorAccent">@color/Black</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

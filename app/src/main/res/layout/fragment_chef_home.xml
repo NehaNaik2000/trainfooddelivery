@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView android:layout_width="match_parent" android:layout_height="49dp" android:textColor="@android:color/black" android:text="Please remove dishes you no longer wish to sell or if they are unavailable." android:background="#B5D3E6" android:layout_marginTop="5dp" android:layout_marginStart="0dp" android:layout_alignParentStart="true" android:id="@+id/instructionTextView"/>
+
+    <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8dp" android:id="@+id/recyclerview" android:layout_below="@id/instructionTextView"/>
+
+</RelativeLayout>
